@@ -1,0 +1,1169 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "/home/ngeni_fred/Development/smart-contracts/uniswap/hardhat-sepolia-router/contracts/UniswapV2Migrator.sol": {
+      "lastModificationDate": 1684782557767,
+      "contentHash": "a9e0ddbf81d210714ca0857fbef2415c",
+      "sourceName": "contracts/UniswapV2Migrator.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@uniswap/lib/contracts/libraries/TransferHelper.sol",
+        "./interfaces/IUniswapV2Migrator.sol",
+        "./interfaces/V1/IUniswapV1Factory.sol",
+        "./interfaces/V1/IUniswapV1Exchange.sol",
+        "./interfaces/IUniswapV2Router01.sol",
+        "./interfaces/IERC20.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.6"
+      ],
+      "artifacts": [
+        "UniswapV2Migrator"
+      ]
+    },
+    "/home/ngeni_fred/Development/smart-contracts/uniswap/hardhat-sepolia-router/contracts/interfaces/IUniswapV2Migrator.sol": {
+      "lastModificationDate": 1684782391321,
+      "contentHash": "f626f6b55e8b5ffbda4f64e9409e5614",
+      "sourceName": "contracts/interfaces/IUniswapV2Migrator.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IUniswapV2Migrator"
+      ]
+    },
+    "/home/ngeni_fred/Development/smart-contracts/uniswap/hardhat-sepolia-router/contracts/interfaces/V1/IUniswapV1Factory.sol": {
+      "lastModificationDate": 1684782391321,
+      "contentHash": "abe9343b20a93919250e0dba78bfd9c1",
+      "sourceName": "contracts/interfaces/V1/IUniswapV1Factory.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IUniswapV1Factory"
+      ]
+    },
+    "/home/ngeni_fred/Development/smart-contracts/uniswap/hardhat-sepolia-router/contracts/interfaces/V1/IUniswapV1Exchange.sol": {
+      "lastModificationDate": 1684782391321,
+      "contentHash": "5ec7fe77a73b5ace5fc1fbae6b87f34e",
+      "sourceName": "contracts/interfaces/V1/IUniswapV1Exchange.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IUniswapV1Exchange"
+      ]
+    },
+    "/home/ngeni_fred/Development/smart-contracts/uniswap/hardhat-sepolia-router/contracts/interfaces/IUniswapV2Router01.sol": {
+      "lastModificationDate": 1684782391321,
+      "contentHash": "95d8729b2c698dc663322167b3c085fe",
+      "sourceName": "contracts/interfaces/IUniswapV2Router01.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.2"
+      ],
+      "artifacts": [
+        "IUniswapV2Router01"
+      ]
+    },
+    "/home/ngeni_fred/Development/smart-contracts/uniswap/hardhat-sepolia-router/contracts/interfaces/IERC20.sol": {
+      "lastModificationDate": 1684782391321,
+      "contentHash": "3d2b948a9266ee66b6e739de97c7e6e9",
+      "sourceName": "contracts/interfaces/IERC20.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IERC20"
+      ]
+    },
+    "/home/ngeni_fred/Development/smart-contracts/uniswap/hardhat-sepolia-router/node_modules/@uniswap/lib/contracts/libraries/TransferHelper.sol": {
+      "lastModificationDate": 1684779930922,
+      "contentHash": "7fad4038612c5f040ebd746a3e58e0db",
+      "sourceName": "@uniswap/lib/contracts/libraries/TransferHelper.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0"
+      ],
+      "artifacts": [
+        "TransferHelper"
+      ]
+    },
+    "/home/ngeni_fred/Development/smart-contracts/uniswap/hardhat-sepolia-router/contracts/examples/ExampleSwapToPrice.sol": {
+      "lastModificationDate": 1684782497140,
+      "contentHash": "244d1cc7c8b180a9d649b3708b3d5770",
+      "sourceName": "contracts/examples/ExampleSwapToPrice.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@uniswap/v2-core/contracts/interfaces/IUniswapV2Pair.sol",
+        "@uniswap/lib/contracts/libraries/Babylonian.sol",
+        "@uniswap/lib/contracts/libraries/TransferHelper.sol",
+        "../libraries/UniswapV2LiquidityMathLibrary.sol",
+        "../interfaces/IERC20.sol",
+        "../interfaces/IUniswapV2Router01.sol",
+        "../libraries/SafeMath.sol",
+        "../libraries/UniswapV2Library.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.6"
+      ],
+      "artifacts": [
+        "ExampleSwapToPrice"
+      ]
+    },
+    "/home/ngeni_fred/Development/smart-contracts/uniswap/hardhat-sepolia-router/contracts/libraries/UniswapV2LiquidityMathLibrary.sol": {
+      "lastModificationDate": 1684782391317,
+      "contentHash": "ff4345b5db079741e28bc593d0356893",
+      "sourceName": "contracts/libraries/UniswapV2LiquidityMathLibrary.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@uniswap/v2-core/contracts/interfaces/IUniswapV2Pair.sol",
+        "@uniswap/v2-core/contracts/interfaces/IUniswapV2Factory.sol",
+        "@uniswap/lib/contracts/libraries/Babylonian.sol",
+        "@uniswap/lib/contracts/libraries/FullMath.sol",
+        "./SafeMath.sol",
+        "./UniswapV2Library.sol"
+      ],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "UniswapV2LiquidityMathLibrary"
+      ]
+    },
+    "/home/ngeni_fred/Development/smart-contracts/uniswap/hardhat-sepolia-router/contracts/libraries/SafeMath.sol": {
+      "lastModificationDate": 1684782536647,
+      "contentHash": "a9f6fd2d01210e9aa4951fcdf11bbea9",
+      "sourceName": "contracts/libraries/SafeMath.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.6"
+      ],
+      "artifacts": [
+        "SafeMath"
+      ]
+    },
+    "/home/ngeni_fred/Development/smart-contracts/uniswap/hardhat-sepolia-router/contracts/libraries/UniswapV2Library.sol": {
+      "lastModificationDate": 1684782391317,
+      "contentHash": "b545c97573c8aa5876a4f9e25f28a732",
+      "sourceName": "contracts/libraries/UniswapV2Library.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@uniswap/v2-core/contracts/interfaces/IUniswapV2Pair.sol",
+        "./SafeMath.sol"
+      ],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "UniswapV2Library"
+      ]
+    },
+    "/home/ngeni_fred/Development/smart-contracts/uniswap/hardhat-sepolia-router/node_modules/@uniswap/v2-core/contracts/interfaces/IUniswapV2Pair.sol": {
+      "lastModificationDate": 1684779930922,
+      "contentHash": "3fa31c3860f2b9585c3a98c64850829e",
+      "sourceName": "@uniswap/v2-core/contracts/interfaces/IUniswapV2Pair.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IUniswapV2Pair"
+      ]
+    },
+    "/home/ngeni_fred/Development/smart-contracts/uniswap/hardhat-sepolia-router/node_modules/@uniswap/lib/contracts/libraries/Babylonian.sol": {
+      "lastModificationDate": 1684779930922,
+      "contentHash": "3f7a9d2b13eebc20350a1cc42ed09b16",
+      "sourceName": "@uniswap/lib/contracts/libraries/Babylonian.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.0"
+      ],
+      "artifacts": [
+        "Babylonian"
+      ]
+    },
+    "/home/ngeni_fred/Development/smart-contracts/uniswap/hardhat-sepolia-router/node_modules/@uniswap/v2-core/contracts/interfaces/IUniswapV2Factory.sol": {
+      "lastModificationDate": 1684779930922,
+      "contentHash": "ec39b5372f4f4d52101b4da561e2aee6",
+      "sourceName": "@uniswap/v2-core/contracts/interfaces/IUniswapV2Factory.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IUniswapV2Factory"
+      ]
+    },
+    "/home/ngeni_fred/Development/smart-contracts/uniswap/hardhat-sepolia-router/node_modules/@uniswap/lib/contracts/libraries/FullMath.sol": {
+      "lastModificationDate": 1684779930922,
+      "contentHash": "23bbd047cedfd8027fb139fcab949cc0",
+      "sourceName": "@uniswap/lib/contracts/libraries/FullMath.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.0"
+      ],
+      "artifacts": [
+        "FullMath"
+      ]
+    },
+    "/home/ngeni_fred/Development/smart-contracts/uniswap/hardhat-sepolia-router/node_modules/@uniswap/lib/contracts/libraries/FixedPoint.sol": {
+      "lastModificationDate": 1684779930922,
+      "contentHash": "9c78b75695500ec38a85fea7d923fbf0",
+      "sourceName": "@uniswap/lib/contracts/libraries/FixedPoint.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./FullMath.sol",
+        "./Babylonian.sol",
+        "./BitMath.sol"
+      ],
+      "versionPragmas": [
+        ">=0.4.0"
+      ],
+      "artifacts": [
+        "FixedPoint"
+      ]
+    },
+    "/home/ngeni_fred/Development/smart-contracts/uniswap/hardhat-sepolia-router/node_modules/@uniswap/lib/contracts/libraries/BitMath.sol": {
+      "lastModificationDate": 1684779930922,
+      "contentHash": "9268c1120c875c017e31caad9aa38921",
+      "sourceName": "@uniswap/lib/contracts/libraries/BitMath.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "BitMath"
+      ]
+    },
+    "/home/ngeni_fred/Development/smart-contracts/uniswap/hardhat-sepolia-router/contracts/examples/ExampleSlidingWindowOracle.sol": {
+      "lastModificationDate": 1684782491084,
+      "contentHash": "cf18056a3d9764aa0155ccb942d04dff",
+      "sourceName": "contracts/examples/ExampleSlidingWindowOracle.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@uniswap/v2-core/contracts/interfaces/IUniswapV2Factory.sol",
+        "@uniswap/v2-core/contracts/interfaces/IUniswapV2Pair.sol",
+        "@uniswap/lib/contracts/libraries/FixedPoint.sol",
+        "../libraries/SafeMath.sol",
+        "../libraries/UniswapV2Library.sol",
+        "../libraries/UniswapV2OracleLibrary.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.6"
+      ],
+      "artifacts": [
+        "ExampleSlidingWindowOracle"
+      ]
+    },
+    "/home/ngeni_fred/Development/smart-contracts/uniswap/hardhat-sepolia-router/contracts/libraries/UniswapV2OracleLibrary.sol": {
+      "lastModificationDate": 1684782391317,
+      "contentHash": "6375842b01002cf7b8f7899b01c5e8c8",
+      "sourceName": "contracts/libraries/UniswapV2OracleLibrary.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@uniswap/v2-core/contracts/interfaces/IUniswapV2Pair.sol",
+        "@uniswap/lib/contracts/libraries/FixedPoint.sol"
+      ],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "UniswapV2OracleLibrary"
+      ]
+    },
+    "/home/ngeni_fred/Development/smart-contracts/uniswap/hardhat-sepolia-router/contracts/examples/ExampleOracleSimple.sol": {
+      "lastModificationDate": 1684782481240,
+      "contentHash": "baff78f513b6ecb8f6fc84da8955ba58",
+      "sourceName": "contracts/examples/ExampleOracleSimple.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@uniswap/v2-core/contracts/interfaces/IUniswapV2Factory.sol",
+        "@uniswap/v2-core/contracts/interfaces/IUniswapV2Pair.sol",
+        "@uniswap/lib/contracts/libraries/FixedPoint.sol",
+        "../libraries/UniswapV2OracleLibrary.sol",
+        "../libraries/UniswapV2Library.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.6"
+      ],
+      "artifacts": [
+        "ExampleOracleSimple"
+      ]
+    },
+    "/home/ngeni_fred/Development/smart-contracts/uniswap/hardhat-sepolia-router/contracts/test/ERC20.sol": {
+      "lastModificationDate": 1684782391317,
+      "contentHash": "3c84c6f456884e55b360a8450d0f0446",
+      "sourceName": "contracts/test/ERC20.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libraries/SafeMath.sol"
+      ],
+      "versionPragmas": [
+        "=0.6.6"
+      ],
+      "artifacts": [
+        "ERC20"
+      ]
+    },
+    "/home/ngeni_fred/Development/smart-contracts/uniswap/hardhat-sepolia-router/contracts/test/DeflatingERC20.sol": {
+      "lastModificationDate": 1684782391317,
+      "contentHash": "7476ba791f9afb6f870f10560972e0a0",
+      "sourceName": "contracts/test/DeflatingERC20.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libraries/SafeMath.sol"
+      ],
+      "versionPragmas": [
+        "=0.6.6"
+      ],
+      "artifacts": [
+        "DeflatingERC20"
+      ]
+    },
+    "/home/ngeni_fred/Development/smart-contracts/uniswap/hardhat-sepolia-router/contracts/UniswapV2Router02.sol": {
+      "lastModificationDate": 1684782564911,
+      "contentHash": "b5068ea43c2020012aca8ee5a341e485",
+      "sourceName": "contracts/UniswapV2Router02.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@uniswap/v2-core/contracts/interfaces/IUniswapV2Factory.sol",
+        "@uniswap/lib/contracts/libraries/TransferHelper.sol",
+        "./interfaces/IUniswapV2Router02.sol",
+        "./libraries/UniswapV2Library.sol",
+        "./libraries/SafeMath.sol",
+        "./interfaces/IERC20.sol",
+        "./interfaces/IWETH.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.6"
+      ],
+      "artifacts": [
+        "UniswapV2Router02"
+      ]
+    },
+    "/home/ngeni_fred/Development/smart-contracts/uniswap/hardhat-sepolia-router/contracts/interfaces/IUniswapV2Router02.sol": {
+      "lastModificationDate": 1684782391321,
+      "contentHash": "3fd36426274a5b35f7e702f87ba08a8e",
+      "sourceName": "contracts/interfaces/IUniswapV2Router02.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IUniswapV2Router01.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.2"
+      ],
+      "artifacts": [
+        "IUniswapV2Router02"
+      ]
+    },
+    "/home/ngeni_fred/Development/smart-contracts/uniswap/hardhat-sepolia-router/contracts/interfaces/IWETH.sol": {
+      "lastModificationDate": 1684782391321,
+      "contentHash": "270f2c1a1f22475259d5a2f6a524f72e",
+      "sourceName": "contracts/interfaces/IWETH.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IWETH"
+      ]
+    },
+    "/home/ngeni_fred/Development/smart-contracts/uniswap/hardhat-sepolia-router/contracts/examples/ExampleFlashSwap.sol": {
+      "lastModificationDate": 1684782473660,
+      "contentHash": "34b638f462dbf5e493cd85e61883c96c",
+      "sourceName": "contracts/examples/ExampleFlashSwap.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@uniswap/v2-core/contracts/interfaces/IUniswapV2Callee.sol",
+        "../libraries/UniswapV2Library.sol",
+        "../interfaces/V1/IUniswapV1Factory.sol",
+        "../interfaces/V1/IUniswapV1Exchange.sol",
+        "../interfaces/IUniswapV2Router01.sol",
+        "../interfaces/IERC20.sol",
+        "../interfaces/IWETH.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.6"
+      ],
+      "artifacts": [
+        "ExampleFlashSwap"
+      ]
+    },
+    "/home/ngeni_fred/Development/smart-contracts/uniswap/hardhat-sepolia-router/node_modules/@uniswap/v2-core/contracts/interfaces/IUniswapV2Callee.sol": {
+      "lastModificationDate": 1684779930922,
+      "contentHash": "30a4aed15b3fa3ce5588118b7cecfa7f",
+      "sourceName": "@uniswap/v2-core/contracts/interfaces/IUniswapV2Callee.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IUniswapV2Callee"
+      ]
+    },
+    "/home/ngeni_fred/Development/smart-contracts/uniswap/hardhat-sepolia-router/contracts/UniswapV2Router01.sol": {
+      "lastModificationDate": 1684782561995,
+      "contentHash": "672f13b499394a48b6d07015b30f10e4",
+      "sourceName": "contracts/UniswapV2Router01.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@uniswap/v2-core/contracts/interfaces/IUniswapV2Factory.sol",
+        "@uniswap/lib/contracts/libraries/TransferHelper.sol",
+        "./libraries/UniswapV2Library.sol",
+        "./interfaces/IUniswapV2Router01.sol",
+        "./interfaces/IERC20.sol",
+        "./interfaces/IWETH.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.6"
+      ],
+      "artifacts": [
+        "UniswapV2Router01"
+      ]
+    },
+    "/home/ngeni_fred/Development/smart-contracts/uniswap/hardhat-sepolia-router/contracts/test/RouterEventEmitter.sol": {
+      "lastModificationDate": 1684782391317,
+      "contentHash": "bb6d14d6c3ceaed70c1dae947354710a",
+      "sourceName": "contracts/test/RouterEventEmitter.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/IUniswapV2Router01.sol"
+      ],
+      "versionPragmas": [
+        "=0.6.6"
+      ],
+      "artifacts": [
+        "RouterEventEmitter"
+      ]
+    },
+    "/home/ngeni_fred/Development/smart-contracts/uniswap/hardhat-sepolia-router/contracts/examples/ExampleComputeLiquidityValue.sol": {
+      "lastModificationDate": 1684782465416,
+      "contentHash": "dd97dc32a4b088b8539998046a4b0360",
+      "sourceName": "contracts/examples/ExampleComputeLiquidityValue.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libraries/UniswapV2LiquidityMathLibrary.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.6"
+      ],
+      "artifacts": [
+        "ExampleComputeLiquidityValue"
+      ]
+    },
+    "/home/ngeni_fred/Development/smart-contracts/uniswap/hardhat-sepolia-router/contracts/test/WETH9.sol": {
+      "lastModificationDate": 1684782391317,
+      "contentHash": "c60afbcd54ec9da3b3908e2db56c0d12",
+      "sourceName": "contracts/test/WETH9.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "=0.6.6"
+      ],
+      "artifacts": [
+        "WETH9"
+      ]
+    }
+  }
+}
